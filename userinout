@@ -1,0 +1,27 @@
+using System;
+
+namespace LabSixOne
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Please enter a number: ");
+            int userInput = Convert.ToInt32(Console.ReadLine());
+
+            while (userInput != 4)
+            {
+                Console.WriteLine("Great Job!");
+                Console.WriteLine("Please enter another number : ");
+                userInput = Convert.ToInt32(Console.ReadLine());
+
+                if (userInput == 4)
+                {
+                    Console.WriteLine("ERROR!");
+                }
+            }
+
+            Console.ReadKey();
+        }
+    }
+}
